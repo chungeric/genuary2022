@@ -1,10 +1,12 @@
+import { config } from "../config";
+
 export async function getContributions() {
   const headers = {
-    Authorization: `bearer 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`,
+    Authorization: `bearer ${config.GITHUB_ACCESS_TOKEN}`,
   };
   const body = {
     query: `query {
-      user(login: "chungeric") {
+      user(login: "${config.GITHUB_USERNAME}") {
         name
         contributionsCollection {
           contributionCalendar {

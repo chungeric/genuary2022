@@ -2,7 +2,20 @@
 
 ## Setup
 
-`yarn && yarn dev`
+To use this with your own contributions you'll need to generate a personal access token via GitHub. https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+
+For scopes you only have to tick `read:user`.
+
+Next, create a new file `/src/config.js`
+
+```
+export const config = {
+  GITHUB_ACCESS_TOKEN: `<your personal access token>`,
+  GITHUB_USERNAME: `<your github username>`,
+};
+```
+
+Run `yarn && yarn dev`
 
 ## Tech
 
