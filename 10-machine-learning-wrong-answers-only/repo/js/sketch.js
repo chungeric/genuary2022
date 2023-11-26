@@ -23,14 +23,14 @@ let textColor;
 let font;
 
 function preload() {
-  font = loadFont("jetbrains.ttf");
+  // font = loadFont("Jetbrains Mono");
 }
 
 function setup() {
   createCanvas(500, 500);
   frameRate(fps);
   textSize(fontSize);
-  textFont(font);
+  textFont("Jetbrains Mono");
   textAlign(CENTER); // needed for nice alignment
   numRows = round(height / yStep);
   numCols = round(width / xStep);
