@@ -8,7 +8,8 @@ let capturer = new CCapture({
 let cnv;
 
 function setup() {
-  cnv = createCanvas(1000, 1000);
+  // cnv = createCanvas(1000, 1000);
+  cnv = createCanvas(500, 500);
   noLoop();
 }
 
